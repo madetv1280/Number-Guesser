@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+    h2 {
+        text-align: center;
+
+    }
+
+    h5{
+        position: fixed;
+        bottom: 10px;
+        transform: translate(-50%, -50%);
+        top: 90%;
+        left: 50%;
+
+        }
+
+   h3 {
+        margin: 25px 0px;
+        text-align: center;
+    }
+
+
+    .tip{
+        display: flex;
+        align-items: center;
+        color: #dbc753;
+        text-align: center;
+       }
+
+    a {
+        text-decoration: none;
+    }
+
+ .center {
+        box-shadow: 5px 5px 34px 5px #000000;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 120px;
+        background-color: #212121;
+    }
+
+    body {
+
+        background-color: #1a1a1a;
+        font-family: Arial, Helvetica, sans-serif;
+
+        color: #d4d4d4;}
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+          text-decoration: none;
+
+          font-size: 18px;
+          border-radius: 10px;
+          width: 200px;
+          height: 40px;
+          font-weight: bold;
+          background-color: #d6a724;
+        }
+
+ input {
+        text-align: center;
+        padding: 6px 10px;
+        background: #292929;
+        border: 1px solid rgb(40, 40, 40);
+        border-radius: 4px;
+        font-size: 25px;
+        color: rgb(247, 248, 248);
+        height: 46px;
+        width: 140px;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guesser - Game</title>
+</head>
+<body>
+    <div class="center">
+        <form action="" method="get">
+            <h2>Number Guesser</h2>
+            <br>
+            <input type="number" name="guessed_number" value="Guess" autofocus size="3" min="1" max="100">
+        </form>
+        <br>
+        <nobr> <h3 class="tip">{{ tip }}</h3></nobr>
+    </div>
+</body>
+<footer>
+    <h5>2024 &copy; Daniel Kamin</h5>
+    <a href="scores"><button>Highscore-List</button></a>
+</footer>
+</html>

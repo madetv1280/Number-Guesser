@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h5 {
+        position: absolute;
+        bottom: 10px;
+        transform: translate(-50%, -50%);
+        bottom: -5%;
+        left: 50%;
+        }
+
+    h2 {
+        text-align: center
+    }
+
+    .center {
+        box-shadow: 5px 5px 34px 5px #000000;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 100px;
+        background-color: #212121
+    }
+
+    body {
+
+        background-color: #1a1a1a;
+        font-family: Arial, Helvetica, sans-serif;
+
+        color: #d4d4d4;}
+
+
+    button {
+          position: fixed;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+          text-decoration: none;
+
+          font-size: 18px;
+          border-radius: 10px;
+          width: 200px;
+          height: 40px;
+          font-weight: bold;
+          background-color: #d6a724;
+        }
+
+    table.customTable {
+        width: 100%;
+        background-color: #FFFFFF;
+        border-collapse: collapse;
+        border-width: 0px;
+        border-color: #878080;
+        border-style: solid;
+        color: #FFFFFF;
+    }
+
+    a {
+        text-decoration: none;
+        }
+
+    table.customTable td, table.customTable th {
+        border-width: 0px;
+        border-color: #878080;
+        border-style: dotted;
+        padding: 25px;
+        background-color:#292929;
+    }
+
+    table.customTable thead {
+        background-color: #D6A724;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guesser - Scores</title>
+</head>
+<body>
+    <div class="center">
+        <form action="" method="get">
+            <h2>Number Guesser<br>Highscore</h2>
+            <table class="customTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Time</th>
+                    <th>Trys</th>
+                </tr>
+                {% for entry in highscores %}
+                <tr>
+                    <td>{{ entry['name'] }}</td>
+                    <td>{{ entry['time'] }}</td>
+                    <td>{{ entry['trys'] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </form>
+        <br>
+    </div>
+</body>
+<footer>
+    <h5>2024 &copy; Daniel Kamin</h5>
+    <a href="/"><button>Back to game</button></a>
+</footer>
+</html>
