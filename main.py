@@ -1,6 +1,6 @@
 """
-title: number guesser, version: 2.0
-author: Daniel Kamin
+title: number guesser, version: 2.1
+author: madetv1280
 last change: 01/29/2024
 """
 
